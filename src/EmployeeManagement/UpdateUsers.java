@@ -6,7 +6,7 @@ public class UpdateUsers {
 	public static void updateUsers() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Employeemanagement","root","M1racle@123"); 
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Employeemanagement","root","password"); 
 			Scanner scan = new Scanner(System.in);
 			System.out.println("Enter the userName to update :");
 			String e_name = scan.nextLine();
