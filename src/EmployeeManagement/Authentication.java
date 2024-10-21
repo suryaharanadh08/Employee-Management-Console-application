@@ -29,7 +29,7 @@ public class Authentication {
 	
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Employeemanagement","root","M1racle@123"); 
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Employeemanagement","root","Password"); 
 			String query = "select * from login_credentials where userName=? and userPassword=?";
 			PreparedStatement ps = conn.prepareStatement(query);
 			ps.setString(1, userName);
