@@ -7,7 +7,7 @@ public class DeleteUsers {
 	public static void deleteUsers() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Employeemanagement","root","M1racle@123"); 
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Employeemanagement","root","password"); 
 			Scanner scan = new Scanner(System.in);
 			System.out.println("Enter the EMPLOYEE NAME to Delete his data ");
 			String e_name = scan.nextLine();
