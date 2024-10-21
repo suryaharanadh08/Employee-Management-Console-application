@@ -8,7 +8,7 @@ public class GetUserData {
 		try {
 	
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Employeemanagement","root","M1racle@123");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Employeemanagement","root","password");
 			String query = "select * from employee_details where e_name=?";
 			System.out.println("Enter Employee Name to get his details : ");
 			String e_name = scan.nextLine();
